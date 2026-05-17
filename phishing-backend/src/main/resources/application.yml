@@ -1,0 +1,12 @@
+
+# 设置启动端口
+server:
+  port: 8080
+
+spring:
+  datasource:
+    # 注意：这里把 utf8mb4 改成了 utf
+    url: jdbc:mysql://localhost:3306/phishing_detect_db?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
